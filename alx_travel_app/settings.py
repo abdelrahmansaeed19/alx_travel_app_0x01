@@ -55,7 +55,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'coresheaders',
+    'corsheaders',
     'drf_yasg',
     'listings',
 ]
@@ -74,6 +74,9 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'alx_travel_app.urls'
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+AUTH_USER_MODEL = 'listings.User'
+
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
