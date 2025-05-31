@@ -48,7 +48,6 @@ class User(AbstractUser):
     USERNAME_FIELD = 'username'
     REQUIRED_FIELDS = ['email', 'first_name', 'last_name']
     
-
     def __str__(self):
         return f"{self.username} ({self.role})"
 
